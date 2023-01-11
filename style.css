@@ -5,19 +5,21 @@
 
 .container-fluid{
     width: 100%;
-    height: fit-content;
+    height: 100%;
     padding: 0 !important;
     margin: 0 !important;
 }
 
 .header{
     width: 100%;
+    height: 100%;
     margin: 0 !important;
     min-height: fit-content;
 }
 
 header{
     width: inherit;
+    height: 100%;
 }
 
 .logo{
@@ -41,21 +43,13 @@ nav{
     background-color: rgba(190, 182, 165, 0.9);
 }
 
-#navbar{
-    float: right;
-}
-
-/* .navbar-brand{
-    margin-right: 35rem !important;
-} */
-
 .row{
     margin: 0 !important;
 }
 
 .carousel{
     width: 100%;
-    height: 350px;
+    height: 563px;
 }
 
 .carousel-caption{
@@ -63,5 +57,70 @@ nav{
 }
 
 .carousel-item{
-    height: 570px;
+    height: 495px;
+}
+
+@media only screen and (min-width:767px){
+    .carousel-item{
+        height: 100%;
+    }
+}
+
+.button{
+    position: absolute;
+    top: 40%;
+}
+
+.button .btn{
+    width: 140px;
+    text-transform: uppercase;
+}
+
+#header{
+    background-color: rgba(201, 199, 193, 0.96);
+}
+
+#header .avatar{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #007bff;
+}
+
+main .row .col-md-3{
+    height: 250px;
+    background-color: rgba(201, 199, 193, 0.96);
+}
+
+main .row .col-md-3 span{
+    color: #007bff;
+    font-size: 25px;
+}
+
+.card{
+    width: 50%;
+    margin: auto;
+}
+
+
+.card .login-form input{
+    height: 50px;
+    background-color: rgb(221, 230, 230);
+}
+
+.card .forgot-password{
+    float: right;
+}
+
+button.login{
+    text-transform: uppercase;
+    height: 50px;
+}
+
+.card-footer{
+    background-color: #cedede;
+}
+
+.card-footer hr{
+    width: 40px;
 }
