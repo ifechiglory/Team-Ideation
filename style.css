@@ -10,16 +10,12 @@
     margin: 0 !important;
 }
 
-.header{
+header{
     width: 100%;
     height: 100%;
     margin: 0 !important;
-    min-height: fit-content;
-}
-
-header{
-    width: inherit;
-    height: 100%;
+    height: fit-content;
+    background-color: #EAFFF0;
 }
 
 .logo{
@@ -40,11 +36,12 @@ header{
 }
 
 nav{
-    background-color: rgba(190, 182, 165, 0.9);
+    background-color: #EAFFF0;
 }
 
-.row{
-    margin: 0 !important;
+button.navbar-toggler:hover{
+    background-color: #007bff;
+    color: #cedede;
 }
 
 .carousel{
@@ -53,6 +50,9 @@ nav{
 }
 
 .carousel-caption{
+    left: 0 !important;
+    top: 20%;
+    bottom: 20% !important;
     background-color: rgba(22, 22, 21, 0.6);
 }
 
@@ -66,6 +66,50 @@ nav{
     }
 }
 
+#numbers div{
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+#numbers div p{
+    font-size: 12px;
+}
+
+#services p{
+    font-size: 12px;
+}
+
+.services div{
+    border: 1px solid #333;
+}
+
+.services div:hover{
+    border: 2px solid #333;
+}
+
+.services i{
+    font-size: 40px;
+    color: #007bff;
+
+}
+
+.services, .coming-soon h5{
+    color: #007bff;
+}
+
+.coming-soon i{
+    font-size: 40px;
+    color: #007bff;
+}
+
+.coming-soon div{
+    border: 1px solid #333;
+}
+
+.coming-soon div:hover{
+    border: 2px solid #333;
+}
+/* 
 .button{
     position: absolute;
     top: 40%;
@@ -74,10 +118,6 @@ nav{
 .button .btn{
     width: 140px;
     text-transform: uppercase;
-}
-
-#header{
-    background-color: rgba(201, 199, 193, 0.96);
 }
 
 #header .avatar{
@@ -123,4 +163,4 @@ button.login{
 
 .card-footer hr{
     width: 40px;
-}
+} */

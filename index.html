@@ -10,80 +10,183 @@
     <title>MentHealth</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-    <section class="container-fluid">
-    <!-- Home Page starts -->
-        <section class="row header">
-            <header>
-                <nav class="navbar sticky-top navbar-expand-lg">
-                    <a href="#" class="navbar-brand logo m-md-30">
-                        <img src="logo.png" alt="logo">
-                        <h1>Menthealth</h1>
-                    </a>
+  <section class="container-fluid">
+    <!-- Header section starts -->
+    <header id="header">
+      <!-- Navbar starts -->
+      <nav class="navbar sticky-top navbar-expand-lg">
+        <a href="#" class="navbar-brand logo m-md-30">
+            <img src="logo.png" alt="logo">
+            <h1>Menthealth</h1>
+        </a>
 
-                    <div class="col-4 d-none d-md-flex d-lg-flex align-content-end m-auto">
-                      <button class="btn btn-primary w-25 w-md-25 mr-2">Login</button>
-                      <button class="btn btn-primary w-25 w-md-25 ml-2">Sign Up</button>
-                    </div>
-                </nav>
-<!-- Carousel -->
-                   
-                <div id="carousel" class="carousel slide" data-ride="carousel">
-                      
-                      <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=783&q=80" alt="First slide">
-                            
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bi-list"></span>
+        </button>
 
-                              <div class="carousel-caption d-block d-sm-block d-md-block">
-                                <h5>Find the best psychiatrist doctors in your vicinity</h5>
-                                <p>Find a psychiatrist and make an appointment with them as you want</p>
-                             </div>
-                            </div>
+        <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto >
+          <li class="nav-item">
+            <a class="nav-item nav-link active" href="#header">Home <span class="sr-only">(current)</span></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#doctors">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+          </li>
 
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80" alt="Second slide">
-                          
-                            
-                            <div class="carousel-caption d-block d-sm-block d-md-block">
-                                <h5>Schedule appointments with expert doctors</h5>
-                                <p>Find experienced mental health specialist doctors with expert ratings and reviews and book your appointment</p>
-                             </div>
-                            </div>
+          <a class="btn btn-outline-primary mr-3" role="button" href="login.html">Login</a>
+          <a class="btn btn-outline-primary mr-3" role="button" href="#main">Get Started</a>
+        </ul>
+      </div>
+      </nav>
+      <!-- Navbar ends -->
+      <!-- Carousel starts -->
+      <div id="carousel" class="carousel slide" data-ride="carousel">     
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 p-0" src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDQ5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="First slide">
+              
 
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="Third slide">
-                         
+            <div class="col-3 carousel-caption">
+              <h2 class="p-2">We will help improve your mental health</h2>
+              <p>Convinient, reliable, affordable therapy with Menthealth anytime,anywhere</p>
 
-                          <div class="carousel-caption d-block d-sm-block d-md-block">
-                            <h5>Book face-to-face appointments</h5>
-                            <p>Can't go to a hospital? Book video appointments with doctors on the app in minutes</p>
-                         </div>
-                        </div>
-                        </div>
+              <button class="btn btn-primary mt-3 d-xs-none d-sm-none">Book Appointment</button>
+              <button class="btn btn-outline-primary mt-3 d-sm-none d-xs-none">Find Specialist</button>
+            </div>
+          </div>
 
-                    
-                        <div class="row d-flex d-md-none d-lg-none justify-content-around">
-                          <button class="btn btn-primary w-25"><a href="login.html"></a>Login</button>
-                          <button class="btn btn-primary w-25"> <a href="signup.html"></a> Sign Up</button>
-                        </div>
-                       </div>   
-                       
-                    </div>
-                </div>
-                
+          <div class="carousel-item">
+            <img class="d-block w-100 p-0" src="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80" alt="Second slide">
+            
+              
+            <div class="carousel-caption col-3">
+              <h2>Schedule appointments with expert doctors</h2>
+              <p>Find experienced mental health specialist doctors with expert ratings and reviews and book your appointment</p>
 
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-            </header>
-        </section>
-    </section>
+              <button class="btn btn-primary mt-3 d-xs-none d-sm-none">Book Appointment</button>
+              <button class="btn btn-outline-primary mt-3 d-sm-none d-xs-none">Find Specialist</button>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100 p-0" src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="Third slide">
+          
+
+            <div class="carousel-caption col-3">
+               <h2>Book face-to-face appointments</h2>
+              <p>Can't go to a hospital? Book video appointments with doctors on the app in minutes</p>
+
+              <button class="btn btn-primary mt-3 d-xs-none d-sm-none">Book Appointment</button>
+              <button class="btn btn-outline-primary mt-3 d-sm-none d-xs-none">Find Specialist</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Ends -->
+    <!-- Header ends -->
+    </header>
+
+    <!-- Main body starts -->
+    <main id="main">
+      <!-- Numbers starts -->
+      <div class="row m-0 mb-5 p-4 justify-content-around text-center" id="numbers">
+        <div class="col-2 btn-primary col-xs-5" >
+          <h1>24/7</h1>
+          <p>Online Support</p>
+        </div>
+
+        <div class="col-2 btn-dark col-xs-5">
+          <h1>10+</h1>
+          <p>Doctors</p>
+        </div>
+
+        <div class="col-2 btn-primary col-xs-5">
+          <h1>10+</h1>
+          <p>Active Patients</p>
+        </div>
+
+        <div class="col-2 btn-dark col-xs-5">
+          <h1>50+</h1>
+          <p>Interested</p>
+        </div>
+      </div>
+
+      <!-- Services starts -->
+      <section id="services" class="container">
+        <div class="row w-100 m-0 text-center">
+          <h1 class="d-block w-100">Our Services</h1>
+          <p class="d-block w-100">Get any of the following from our highly skilled professionals. <br> Get quick attention from mental health doctors.</p>
+        </div>
+
+        <div class="row justify-content-around mt-5 services">
+          <div class="col-3 p-4">
+            <i class="bi-people mb-2"></i>
+            <h5>Counselling</h5>
+            <p>Live chat or live video sessions with our best doctors in the field.</p>
+          </div>
+
+          <div class="col-3 p-4">
+            <i class="bi-shield-plus mb-2"></i>
+            <h5>Support Groups</h5>
+            <p>Get across to other users who are going through similar issues with you and interact with them virtually.</p>
+          </div>
+
+          <div class="col-3 p-4">
+            <i class="bi-capsule mb-2"></i>
+            <h5>Prescription Medicine</h5>
+            <p>Get your medication delivered to you without having to visit a physical hospital.</p>
+          </div>
+        </div>
+
+        <div class="row mt-5 mb-5 justify-content-around">
+          <div class="row w-100 text-center mb-5">
+            <h1 class="w-100">Coming Soon...</h1>
+          </div>
+
+          <div class="coming-soon row justify-content-around">
+          <div class="col-3 p-4">
+            <i class="bi-hospital-fill mb-2"></i>
+            <h5>Therapies</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+
+          <div class="col-3 p-4">
+            <i class="bi-person-gear mb-2"></i>
+            <h5>Brain Stimulation</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+
+          <div class="col-3 p-4">
+            <i class="bi-eye mb-2"></i>
+            <h5>Eye Movement</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- Services end -->
+
+      <div class="row m-0">
+        
+      </div>
+    </main>
+  </section>
+        
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
